@@ -202,9 +202,11 @@ main video {
 }
 
 .wavy span {
+    background:linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+    background-clip: text;
+    color: transparent;
     display: inline-block;
     font-size: 3rem;
-    color: #057111;
     animation: wave 1.2s ease-in-out infinite;
     animation-delay: calc(0.1s * var(--i));
 }
