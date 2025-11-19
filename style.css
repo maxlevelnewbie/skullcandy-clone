@@ -257,22 +257,22 @@ main video {
 }
 
 .A {
-    background-image: url(content/CrusherEvo_Bone_5.webp);
+    background-image: url(content/image/CrusherEvo_Bone_5.webp);
     background-size: cover;
 }
 
 .B {
-    background-image: url(content/dime_3_buy_box_TT_dusk_5.webp);
+    background-image: url(content/image/dime_3_buy_box_TT_dusk_5.webp);
     background-size: cover;
 }
 
 .C {
-    background-image: url(content/RailANCTrueBlack.webp);
+    background-image: url(content/image/RailANCTrueBlack.webp);
     background-size: cover;
 }
 
 .D {
-    background-image: url(content/Hesh_evo_buy_box_bone_4.webp);
+    background-image: url(content/image/Hesh_evo_buy_box_bone_4.webp);
     background-size: cover;
 }
 
@@ -304,7 +304,7 @@ main video {
 
 .product-features li {
     padding: 0.5rem 0;
-    color: #aaa;
+    color: #fd0000;
     border-bottom: 1px solid #222;
 }
 
