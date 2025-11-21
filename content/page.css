@@ -1,114 +1,310 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background: #ffffff;
-    color: #fff;
-    overflow-x: hidden;
+  font-family: Arial, sans-serif;
+  background: #ffffff;
+  color: #fff;
+  overflow-x: hidden;
 }
 
 .nav-container {
-    position: absolute;
-    width: 100%;
-    background: rgb(27 25 25 / 95%);
-    backdrop-filter: blur(10px);
-    z-index: 1000;
-    border-bottom: 1px solid #333;
-    margin: 0 auto;
-    padding: 1rem 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  position: relative;
+  width: 100%;
+  background: rgb(27 25 25 / 95%);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+  border-bottom: 1px solid #333;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
-    width: 100%;
+  width: 100%;
 }
 
 .logo-container {
-    height: 47px;
-    width: 200px;
-    display: inline-block;
+  height: 47px;
+  width: 200px;
+  display: inline-block;
 }
 
 .nav-links {
-    display: flex;
-    gap: 2rem;
-    list-style: none;
+  display: flex;
+  gap: 2rem;
+  list-style: none;
 }
 
 .nav-links a {
-    color: #fff;
-    text-decoration: none;
-    transition: color 0.3s;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
 }
 
 .nav-links a:hover {
-    color: #ff4444;
+  color: #ff4444;
 }
 
 .nav-icons {
-    display: flex;
-    gap: 1.5rem;
+  display: flex;
+  gap: 1.5rem;
 }
 
 .search-bar {
-    display: flex;
-    align-items: center;
-    max-width: 400px;
-    margin: 0 auto;
-    border: 2px solid #ccc;
-    border-radius: 8px;
-    overflow: hidden;
+  display: flex;
+  align-items: center;
+  max-width: 400px;
+  margin: 0 auto;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
 .search-bar input[type="search"] {
-    flex: 1;
-    border: none;
-    font-size: 1rem;
+  flex: 1;
+  border: none;
+  font-size: 1rem;
 }
 
 .search-bar input[type="search"]:focus {
-    outline: none;
-    border-color: #007BFF;
+  outline: none;
+  border-color: #007BFF;
 }
 
 .a {
-    border: none;
-    padding: 0 12px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  border: none;
+  padding: 0 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .a img {
-    width: 20px;
-    height: 20px;
+  width: 20px;
+  height: 20px;
 }
 
 .icon-btn {
-    background-color: transparent;
-    border: none;
-    padding: 0 12px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  background-color: transparent;
+  border: none;
+  padding: 0 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .icon-btn img {
-    width: 20px;
-    height: 20px;
+  width: 20px;
+  height: 20px;
 }
 
 button:focus,
 button:active {
-    outline: none;
-    background-color: transparent;
-    box-shadow: none;
+  outline: none;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+
+/* MAIN TITLE */
+.hero h1 {
+  color: #111;
+  text-align: center;
+  margin: 2rem 0 1rem 0;
+  font-size: 2.3rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* PRODUCT GRID */
+.product-grid {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.product-card {
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.07);
+  padding: 2rem 1rem;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.product-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.12);
+}
+
+.product-card h2 {
+  color: #111;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.product-card p {
+  font-size: 1rem;
+  color: #888;
+  margin-bottom: 0.3rem;
+}
+
+.page{
+  display: flex;
+  justify-content: center;
+}
+
+.pagination-container {
+  width: fit-content;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 50px;
+  padding: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+
+.page-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: transparent;
+  color: rgb(72, 72, 72);
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.page-link:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: rgb(0, 0, 0);
+  transform: translateY(-2px);
+}
+
+.page-link.active {
+  background: rgba(114, 113, 113, 0.327);
+  color: white;
+  box-shadow: 0 4px 15px rgba(202, 200, 201, 0.326);
+  transform: translateY(-1px);
+}
+
+.page-link.active:hover {
+  background: rgba(114, 113, 113, 0.327);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(202, 200, 201, 0.326);
+}
+
+.page-link:active {
+  transform: translateY(0);
+}
+
+.page-link.disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.faq {
+  max-width: 650px;
+  margin: 2rem auto 3rem auto;
+  padding: 1.5rem;
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.07);
+}
+
+.faq>h2 {
+  text-align: center;
+  color: #111;
+}
+
+details {
+  box-shadow: -6px 0px 11px 10px rgba(0, 0, 0, 0.07);
+  margin-bottom: 1.2rem;
+  border-left: 4px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+details[open] {
+  border-left-color: #070000;
+}
+
+summary {
+  font-weight: 600;
+  color: #111;
+  cursor: pointer;
+  padding: 0.5rem 0;
+  outline: none;
+  list-style: none;
+  /* hide default dropdown arrow */
+  position: relative;
+}
+
+/* Custom arrow for open/close state */
+summary::marker {
+  display: none;
+}
+
+summary::after {
+  content: "+";
+  font-size: 0.8rem;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.3s ease;
+  color: #ff4a4a;
+}
+
+details[open] summary::after {
+  transform: translateY(-50%) rotate(90deg);
+}
+
+summary:hover {
+  background: #ffeaea;
+  border-radius: 6px;
+}
+
+/* Answer text styling */
+details p {
+  padding: 0.5rem 1rem;
+  color: #444;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+
+/* FOOTER */
+footer {
+  background: #111;
+  color: #bbb;
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 0.98rem;
+  border-top: 3px solid #ff4a4a;
 }
