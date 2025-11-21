@@ -194,7 +194,7 @@ main video {
 
 .products {
     max-width: 1400px;
-    /* margin: 4rem auto; */
+    margin: auto;
 }
 
 .section-title {
@@ -242,6 +242,7 @@ main video {
 .product-card {
     border-radius: 20px;
     padding: 1rem;
+    background-color: #ccc;
     transition: transform 0.3s, box-shadow 0.3s;
     border: 1px solid #333;
     -webkit-transition: transform 0.3s, box-shadow 0.3s;
@@ -256,22 +257,22 @@ main video {
     border-color: #ff4444;
 }
 
-.A {
+.A:hover {
     background-image: url(content/image/CrusherEvo_Bone_5.webp);
     background-size: cover;
 }
 
-.B {
+.B:hover {
     background-image: url(content/image/dime_3_buy_box_TT_dusk_5.webp);
     background-size: cover;
 }
 
-.C {
+.C:hover {
     background-image: url(content/image/RailANCTrueBlack.webp);
     background-size: cover;
 }
 
-.D {
+.D:hover {
     background-image: url(content/image/Hesh_evo_buy_box_bone_4.webp);
     background-size: cover;
 }
